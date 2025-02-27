@@ -102,13 +102,13 @@ form {
 }
 
 .delete-button svg {
-    fill: black;
+    fill: var(--accent-color);
     transition: fill 0.3s ease;
 }
 
 .delete-button:hover svg {
     fill: red;
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 /* When the checkbox is checked, show the checkmark */
@@ -153,3 +153,11 @@ input[type="checkbox"]:checked ~ .todo-text {
         font-size: 15vw;
     }
   }
+.custom-checkbox{
+    border-radius: 50%;
+    cursor: pointer;
+}
+.custom-checkbox:hover{
+    transform: scale(1.5);
+    transition: fill 0.5s ease;
+}
